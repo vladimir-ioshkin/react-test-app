@@ -1,0 +1,48 @@
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.app-wrapper {
+  display: grid;
+  width: 100%;
+
+
+  grid-template-areas:
+"header header"
+"navigation main-content";
+
+  grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    /* grid-gap: 10px; */
+
+}
+
+
+.header {
+grid-area: header;
+background-color: black;}
+
+.header-logo {
+  width: 80px;
+  background-image: none;
+}
+
+.navigation {
+  grid-area: navigation;
+  background-color: teal;
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: cornflowerblue;
+}
+
+.main-content-jpg {
+  width: 100%;
+}
